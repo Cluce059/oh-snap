@@ -16,4 +16,4 @@ it('matches snapchot DOM node structure', ()=> {
  const { asFragment } = render(<About />);
  expect(asFragment()).toMatchSnapshot();
 });
-})
+});
