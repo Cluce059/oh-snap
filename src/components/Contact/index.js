@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { validateEmail } from '../../utils/helpers';
-const [contactSelected, setContacteSelected] = useState(false);
+
+
 
 function ContactForm(){
     const [formState, setFormState] = useState({ name: '', email: '', message: ''});
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
+    //const [contactSelected, setContacteSelected] = useState(false);
+
 
     function handleChange(e){
     
